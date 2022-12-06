@@ -5,13 +5,10 @@ import java.sql.DriverManager;
 
 
 public class ConnexionBD {
-
     private static String dbURL = "jdbc:mariadb://localhost:3306/gsbrv" ;
-    private static String user = "gsb-rv" ;
-    private static String password = "ArYlEaNN94" ;
-
+    private static String user = "gsbrv" ;
+    private static String password = "azerty" ;
     private static Connection connexion = null ;
-
     private ConnexionBD() throws ConnexionException {
         try {
             Class.forName( "org.mariadb.jdbc.Driver" ) ;
